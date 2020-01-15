@@ -2,4 +2,4 @@ title: Json2Yaml for Dice
 description: 一个针对骰子牌堆优化的转换器
 show_downloads: true
 google_analytics:
-#theme: jekyll-theme-slate
+theme: jekyll-theme-slate
