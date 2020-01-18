@@ -6,6 +6,9 @@
     
 ## 获取工具
 请移步[Release页面](https://github.com/lunzhiPenxil/json2yaml-for-dice/releases)。
+
+## 宣传
+本人的塔系骰娘小青果酱：[仑质/青果 - 依旧存在于此](http://benzenpenxil.xyz/oliva-still-here/)
     
 ## 更新日志      
 	2020/01/17：[+] 增加了右键菜单
