@@ -24,8 +24,9 @@ from tkinter import ttk
 import webbrowser
 import pyperclip
 
-favicon_ico = "AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAMMOAADDDgAAAAAAAAAAAAA3LBr/Py8e/0M0I/9CNSP/QzYl/0xEM/9gWEj/cGVW/3xxYP+Lfmz/kYRz/5SHdv+TiXb/k4p2/5KKd/+Rinf/k4h1/4+Ecf+LgW3/iX5r/4Z7af+CdmX/fnJf/3dpWP9uYVH/ZltJ/1dOO/9KQS//QDUj/z0wHv88Lx7/OS0a/zguHf9DMyH/QjYk/1hSQ/+CfnL/lJKG/5qVhf+XiXf/j39t/39xXP90ZlD/cWVP/3BgTP9vX0z/c2ZU/4B1Y/9+c2P/c2ZT/21fTP9oWkj/Z1lF/2ZXRf9oWkX/ZllE/2daRv9yZFH/f3Nf/4J5Zf98cmP/VEs//zowIP87Lhz/PjIf/0I1Iv90bmT/mpqR/6Cfkf+IgGz/b2FD/2VXPf9cTDf/YVI//2ZXQf9oVkD/b19R/6Gbk/+ZlIz/lJKK/5mWjv+CeGf/emtZ/25eTv9oWUb/ZFRD/2JUP/9bTTr/Vkc0/1VEMv9VRDD/YFA6/4J4X/+Jh3f/gXt1/0U9Lv9ENiL/Rjkk/2RbTv+KhXb/mZSA/5mSev+Ge13/dGlM/2xfR/9tXkj/altB/3FlU/+vqqT/vb66/6+vqf+ytbP/tra2/6Oflf+FeWb/dWVR/2VYQf9kVkD/YlQ8/19RPf9dTzr/XlM7/2peRv9+dFv/lY57/42LgP93cGX/Rzsp/0Q3JP9JOyH/Rzcf/1NEMf9nXEr/em9c/5OHcv+nnYf/r6GM/6aXff+aj3j/uLmv/8vJy/+urKT/w8a+/8nNyf/Iycr/zMrJ/6OZif+Sgmr/j4Jo/5GDbP+Wi3H/npJ8/6Wbh/+noIv/nZWD/4h/bv9uY1L/UUUy/0EyHv9BMh3/RTgl/0k8JP9PPyj/VEMx/1hJNv9cTTj/YlNA/25iUf95aln/jYNx/8vLw//T0dD/qaCW/9rVz//j5eX/3drZ/93Z2//g4uT/3tzV/6aahv+ekXj/m452/5WKcf+MgWj/g3hh/3dqV/9iVET/UkQz/009J/9KOyT/SDom/0Q2JP9KPCj/TkAr/1BCLP9XSDT/Xk88/2VXQP9pW0X/aVxI/2teR/+9t7D/09LR/5iNff+KgGf/ysS4/9XUzf/v7/D/7+/w/9jW0v/JxLn/joNu/3JkRP9yZEX/bV4//2lZOf9iUzb/YlU8/2BROv9aSjX/VUYx/05AKf9IPCX/RTck/0w+Kf9ENSP/TT4p/1xONv9gUj3/ZlhC/2tdRv9xYk7/cmNN/8zJwv/LzMT/eGhN/4ZzWv9yZEf/qaOR////////////sqya/3JhRP+Cb1b/g3BQ/39rS/97Z0j/dmJC/3BfQ/9qXUX/YFM5/1lNMv9XSjH/T0Ir/0w8Jv9IOSP/SD0m/4h+cP95cGD/TkMt/2RVPv9nWkP/bV9I/3VmTv9rXUL/tLCl/+rt6v+fk33/gW5S/4NuUv+0q5z///////////+4sqL/fmtN/4dzVf99Z03/fGpP/3pmSP93ZEP/cV9F/2lbRP9hVDn/WU0x/1ZJLv9PQir/TD0m/0g5Iv9NQiz/2dXO//b49f+CfXD/WUkx/21eQ/9uY0z/dGdO/3BjRv+ln47/9Pf3/8jCs/+FdFf/h3NU/6edi//x7/D/6uzq/6+omf+Kdlb/h3da/5aRh/+0r6z/h3pf/3ZkRv91Y0n/bmFI/2hbQf9fUjn/WUsz/1JFK/9NQCf/STsk/0o8Jv9YSjv/19LN//f39P+Jf3H/YVU9/3RoTf93bFH/d2lM/5OLd//w9PX/4+Te/49+Zv+Sgmj/zsq+//Ht7//x8vT/raWT/4l2XP+soZf/xsjI/6+qo/+Aclj/f2pP/3hmTP9xZEr/aVxF/2VXQP9dTzj/UkQs/00/Jv9JOyT/UkQt/049Jf9qXkz/7Ovn//n59v+Mg3H/dWNH/3psUP91Z0//xsCz//P39v/09vT/rKCP/9PLwf//////4+Hb//Du6//d2M7/p52S/9DOzP+0rqf/g3Vd/35sTv+DblP/e2lN/3NnTf9tX0j/aFlD/11POP9TRS//T0Eq/0s9Jv9OQCj/Vkox/05AJ/+Dd2b//////8vFu/9uWTv/fXBX/8fBuf//////9vb2//X29v/y8+///v7//+Hf2P+VhXD/19DG//37/v/W1tH/tLGj/4d3XP+Ec1X/iHdY/4NxVf98ak//eGhK/3JiR/9qWkL/XlE4/1RHL/9RQyz/Sz0n/09CKP9WSS//X1Ez/2VUN//q6OT/5eHd/3ptWP/h3dL///////n5+//9+/z/+Pr6//3////QzMH/lYZs/5h+Yf+9s6b//////8nBuP+Pe2H/kn5e/457Xf+NemH/iHVc/31pTf95Z0j/cmFE/2pZPf9iVDf/WEsx/1NFL/9OQCr/UUUq/1lNM/9jUjb/ZVI3/9TSzP/6+vj/4t7c///////6/Pz//f/9//z9/P//////29XN/5WBZf+ciGr/nIdq/6mdif/s7Oz/urWp/5mCZ/+chmv/lH9i/49+Yf+FblP/fWZG/3xuVP9zY0f/bVo8/2VWOf9ZTTL/VUcx/1BCK/9USC3/WUwx/2RRNP9jTjD/nJN+//7++f/9/f7//f39//7//v/8/f3//f36/9jUyv+ej3f/oo5v/6ONcf+fi2//ppmC/+Ph3f/X2dL/opB3/5yGaf+TgWP/inhc/5yLeP+Jd1//dmlN/3FiRv9uXD7/aFc5/1xQNP9TRyz/T0Ep/1VKLf9ZSy7/XE0x/4Z4YP+IfWf/r6qd//z8+//8/P3//f37///////n5+T/ppuI/5yLcP+hi27/nIhu/52Lbf+hkHf/3tzS/+7w7v+ypJH/nohp/4p2Wf+3q5r/+fTy/9HIv/91ZEb/eWZH/3BdQP9rWTz/XlAz/1RILP9PQij/V0wu/0tAJ/+0rqP////////////r6ef/2dXT//7+/v/8/v3/0s7G/+7r5//w8Ov/nI56/8S8rP/s6uD/ppZ8/5eDaP/Y1Mv/9/r6/8vAs/+Kd2D/vK2f//f49P/y8/D/6efk/4V2W/93YkL/dV9D/2tXO/9eTzL/V0ou/1BEKP9OQiT/fHJh///+/f/8/v7/+vz7///////e29f/zMjA///////NyMD/urSl//P08f/p5uD//P79/+/q5v+Zh3D/wbem//T08v/0+Pb/5d7W/8W8sf/4/Pj/6+ro/9XRyP/7/v7/n5SD/29cPv9zYkX/bFk8/2JSNf9ZTC//UkYq/0o+IP+8t6r///////v6+////vz/+v7+//X29v+Kfmz/vLSm///////Kxb7/1NDJ///////X08n/jXth/8W6p//8/f//9vf5//b39v/2+PX//f////T18P+onoz/o5iE/////v/Iwbv/c2BE/3RjRf9sWj3/YlM2/1hNMP9RRSn/Sz0j/4mDcv//////+/v8//n6+P/+////6+nl/4t7Yv+Aclb/y8e8///////8/Pz/+vz+/6+gkP/Duqr///////r8/P/8/Pz/+fr6//z////x8u7/qJ6N/49+YP+HeV3/3NrR/+zp5f92aE7/dGFD/2tYPP9fUDT/Vkou/1FFKf9SQiv/UEUr/8nHu////////f7+/////f+mnYr/fW5S/4h7X/+MfmX/2NbL/+Dh3v/39/X/6+3p//r7+v/9/P7//v7+//z8/P/+////9PLs/6qfif+QfV//jXxe/4JzWP+YjXj/m5B//3VkSv9wXkH/ZVQ3/1pNMf9TRyv/T0Mo/1NGKv9WSSv/XFI5/5GJdv+noJD/hXtn/25fQv9+b1b/g3Na/418Yv+JemX/i4Bt/9XSyf//////+fz7//7+/v/8/P3//////+/u6f+mmIL/kYJd/456Vv+HdFL/gnBT/3pnSv90ZUn/cmRI/2hbQP9gVDj/WU0x/1RGLv9PQir/TkQl/1NHLP9XTDD/V0or/15MLP9nVjj/cGNJ/3hrUv+AcFb/hXdh/6adkP/Jwrb/w760/+Ph3f//////+/v6///////n5d//npN5/5F7Yf+GeWH/jIBj/4h4WP96ak3/dGVI/3FkSv9rXET/ZFY+/1tPNf9WSTD/UEIr/0w/KP9LPiX/UEMo/1VJLf9dUTT/ZVc7/2ZYQP9oW0b/eGlR/3lqUv+fmov/+fr4////////////4uDf/+bl5P//////7+3r/5OKef+LfWD/iXdc/5qRgv/u7ub/ubKh/29hRP9wY0b/a11F/2hYQv9gUDv/V0kz/1NFLv9OQCr/Sz0n/0U3JP9LPSX/UEIp/1dILv9YSzL/XlE7/2VYQv9zY03/e21Y/+Lg2///////+/v7//39/v//////xcG+/9/c2P/+////ubKp/4R0Yf+on4z/+Pn0//v6+/+ck4b/bV1E/2haQv9kVj//YFI7/1tMNv9URS//T0Ar/0k6J/9FNyX/RDUk/0g5J/9MPSr/U0Qw/1RFMf9ZSjf/YFNA/2lbRP9/cl//8fDt//7+///9/f3//fz8///////V0cz/iH1s/+Ph3P//////0MzI//f29P/v7+z/lYuA/21dR/9pWkb/Xk88/2BRPf9cTTr/V0k1/1JEMP9NPiv/Rjgl/0I0Iv9AMiH/RTYm/0g5KP9PPy3/UEAv/1VENP9bTDv/ZlZC/2tdS//X1tD///////v7/P/9/f7//////62mmv9zZU//iYJ0/+3t6v//////8/Hv/4yDc/9oWUX/bFpH/2FRQ/9bSjr/WEg3/1VFNP9QQS//Sjwr/0g6J/9ENiP/PC8d/zouHP8/MSD/RDYj/0o9Kf9MPCr/T0Av/1dHN/9dTjv/YVNA/4eAdP/m5eH//P38//n7+f+3taz/aF5M/2teS/9pXEr/g3pr/8fDuv+LgnX/aVlG/2VURP9fTz7/Wkw6/1RFNP9URTP/UEEw/0w9LP9FNyX/QTMg/z8yH/82Khj/MSkY/zYuHP88MB//QTcl/0Y4Jv9HOyn/UEMy/1VHNP9aSzj/XlJB/2liUv+De27/e3Fk/1xRP/9cTjz/Wkw6/11POv9iVED/XE8+/15RQf9fUT//WUo5/1dKOP9TRjT/T0Ev/09BL/9KPSr/RDgm/0E1I/85LRv/NSoY/zEnFf8rKBb/LysZ/zUtHP85MiD/PjMh/z83JP9HPSv/UUMx/1VGM/9XSzj/WE89/1RIN/9YSDj/Wks5/1VHNf9URjT/UkUx/1NFMv9YSzr/Vko5/1NINf9PQzH/T0Mx/1BEMv9NPy3/SDso/0I4JP89NSL/OTEf/zQtGv8uJxX/LCUU/ykjEf8rJRT/MScZ/zErHP82LR7/Misa/y4nFf9EOyn/UEMx/1JDM/9PRTb/TUEw/1FDMf9RQjD/TD4q/0k7Kv9JPCr/Rzoo/0k8K/9JQDD/Rz4t/0Y8Kv9GOir/STwr/0U7J/8/NSP/NzAf/zQuHf8xLBr/LSgW/yokE/8mHxH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
-j2y_version = "1.0.6.20200120.1"
+from j2y_data import *
+
+j2y_version = "1.0.7.20200121.1"
 project_site = "http://benzenpenxil.xyz/json2yaml-for-dice/"
 
 #class type_system_info:
@@ -35,7 +36,7 @@ project_site = "http://benzenpenxil.xyz/json2yaml-for-dice/"
 #system_info = type_system_info(os.name)
 
 class type_deck:
-    def __init__(self, name, author, version, command, desc, includes, info, default):
+    def __init__(self, name, author, version, command, desc, includes, info, default, import_list):
         self.name = name
         self.author = author
         self.version = version
@@ -44,8 +45,9 @@ class type_deck:
         self.includes = includes
         self.info = info
         self.default = default
+        self.import_list = import_list
 
-deck = type_deck("","","","","",[],"","")
+deck = type_deck("","","","","",[],"","",[])
 
 #测试用代码
 #deck.name = "彩六干员"
@@ -60,9 +62,19 @@ deck = type_deck("","","","","",[],"","")
 input_file_name = ""
 output_file_name = ""
 output_file_name += deck.command
+
 giveback_flag = 0
 versiontran_flag = 1
 tabtran_flag = 1
+infoadd_flag = 1
+import_flag = 1
+
+dict_import_default = {"性别": ["男", "女", "不明"]}
+dict_import_default.update(dict_from_shiki)
+dict_for_import = {}
+dict_for_import.update(dict_import_default)
+#dict_for_import.update({"测试": ["测试"]})
+list_for_import_record = []
 
 def filter_emoji(desstr, restr="[EMOJI]"):
     try:
@@ -70,6 +82,39 @@ def filter_emoji(desstr, restr="[EMOJI]"):
     except re.error:
         co = re.compile(u'[\uD800-\uDBFF][\uDC00-\uDFFF]')
     return co.sub(restr, desstr)
+
+def item_get_import_list(dict_this):
+    output_list = []
+    for key_this in list(dict_this.keys()):
+        for item_this in dict_this.get(key_this):
+            for in_item_key_this in re.finditer("\{%{0,1}(.*?)\}", item_this):
+                in_item_key_this_str = in_item_key_this.group().lstrip("{").lstrip("%").rstrip("}")
+                if in_item_key_this_str.find("{") < 0 and in_item_key_this_str.find("}") < 0:
+                    if in_item_key_this_str in list(dict_this.keys()):
+                        pass
+                    else:
+                        if in_item_key_this_str in output_list:
+                            pass
+                        else:
+                            output_list.append(in_item_key_this_str)
+    return output_list
+
+def str_get_import_list(str_this, dict_this):
+    global list_for_import_record
+    output_list = []
+    for in_item_key_this in re.finditer("\{%{0,1}(.*?)\}", str_this):
+        in_item_key_this_str = in_item_key_this.group().lstrip("{").lstrip("%").rstrip("}")
+        if in_item_key_this_str not in list_for_import_record:
+            if in_item_key_this_str.find("{") < 0 and in_item_key_this_str.find("}") < 0:
+                if in_item_key_this_str in list(dict_this.keys()):
+                    pass
+                else:
+                    if in_item_key_this_str in output_list:
+                        pass
+                    else:
+                        output_list.append(in_item_key_this_str)
+            list_for_import_record.append(in_item_key_this_str)
+    return output_list
 
 def item_tran(item_this, flag):
     dice_flag = 0
@@ -123,9 +168,33 @@ def item_tran2show(item_this):
     item_this_new = filter_emoji(item_this_new)
     return item_this_new
 
+def add_import_work(dict_need_import, dict_for_import, output_str, dict_this):
+    global tabtran_flag
+    global giveback_flag
+    global list_for_import_record
+    dict_need_import_next = []
+    for key_this in dict_need_import:
+        if key_this in list(dict_for_import.keys()):
+            output_str += key_this + ":\n"
+            if tabtran_flag != 0:
+                output_tran_flag_tmp = 1
+            for item_this in dict_for_import.get(key_this):
+                dict_need_import_next += str_get_import_list(item_this, dict_this)
+                item_this = item_tran(item_this, giveback_flag)
+                if output_tran_flag_tmp == 0:
+                    output_str += "  - \"" + item_this + "\"\n"
+                else:
+                    output_tran_flag_tmp = 0
+                    output_str += "  - \" " + item_this + "\"\n"
+    if dict_need_import_next != []:
+        output_str = add_import_work(dict_need_import_next, dict_for_import, output_str, dict_this)
+    return output_str
+
 def json2yaml_work():
     global giveback_flag
     global versiontran_flag
+    global infoadd_flag
+    global import_flag
     global deck
     global input_file_name
     global output_file_name
@@ -150,9 +219,8 @@ def json2yaml_work():
         output_str += "\nincludes:\n" + deck.includes_str
     else:
         output_str += "\n"
-    #output_str += "\n#作者信息\n_version:\n  - \"" + deck.version + "\""
-    #output_str += "\n_author:\n  - \"" + deck.author + "\""
-    #output_str += "\ninfo:\n  - \"" + deck.info + "\"\n"
+    if infoadd_flag != 0:
+        output_str += "\n#作者信息\ninfo:\n  - \"" + "本牌堆使用Json2Yaml(By BenzenPenxil)自动转换生成\\n转换器版本号：" + j2y_version + "\\n牌堆原作者：" + deck.author + "\"\n"
     output_str += "\n#牌堆部分\n"
     progress_obj["value"] = 5
     root.update()
@@ -219,6 +287,28 @@ def json2yaml_work():
                 if id_count_all % (count_step) == 0:
                     progress_obj["value"] = int(id_count_all * 75 / count_work + 15)
                     root.update()
+        if import_flag != 0:
+            dict_need_import_next = []
+            deck.import_list = item_get_import_list(input_dict)
+            deck_import_list = deck.import_list.copy()
+            for key_this in deck_import_list:
+                if key_this in list(dict_for_import.keys()):
+                    deck.import_list.remove(key_this)
+                    output_str += key_this + ":\n"
+                    if tabtran_flag != 0:
+                        output_tran_flag_tmp = 1
+                    for item_this in dict_for_import.get(key_this):
+                        dict_need_import_next += str_get_import_list(item_this, input_dict)
+                        item_this = item_tran(item_this, giveback_flag)
+                        if output_tran_flag_tmp == 0:
+                            output_str += "  - \"" + item_this + "\"\n"
+                        else:
+                            output_tran_flag_tmp = 0
+                            output_str += "  - \" " + item_this + "\"\n"
+            if dict_need_import_next != []:
+                output_str = add_import_work(dict_need_import_next, dict_for_import, output_str, input_dict)
+            if len(deck.import_list) != 0:
+                tkinter.messagebox.showwarning("未解决的依赖项", "以下依赖项未找到:\n - " + "\n - ".join(deck.import_list) + "\n将会导致抽取时无法正常调用。")
 
     with open(output_file_name, "w", encoding="utf-8") as output_file_obj:
         output_file_obj.write(output_str)
@@ -290,6 +380,11 @@ def select_file():
                             root.update()
                         #print(tree_id_all_count)
                     tree_id_0_count += 1
+                if import_flag != 0:
+                    import_list_tmp = item_get_import_list(input_dict)
+                    #print("|".join(import_list_tmp))
+                    if len(import_list_tmp) != 0:
+                        tkinter.messagebox.showwarning("存在依赖项", "扫描中发现以下被引用项不包含于导入文件中:\n - " + "\n - ".join(import_list_tmp) + "\n请确保可以提供这些依赖项。" )
                 progress_obj["value"] = 100
                 root.update()
                 #print(tree_id_all_count)
@@ -349,6 +444,62 @@ def tran_save():
         progress_obj["value"] = 0
         root.update()
 
+def load_import():
+    global dict_for_import
+    global dict_import_default
+    input_file_name = ""
+    progress_obj["value"] = 0
+    root.update()
+    file_name = tkinter.filedialog.askopenfilenames(title="请选择Json文件", filetypes=[("Json", "*.json"), ("All Files", "*")])
+    progress_obj["value"] = 5
+    root.update()
+    if len(file_name) > 0:
+        count_error = 0
+        for file_name_now in file_name:
+            try:
+                with open(file_name_now,"r",encoding="utf-8") as input_file_obj:
+                    input_str = input_file_obj.read()
+                    if input_str.startswith(codecs.BOM_UTF8.decode("UTF-8")):
+                        input_dict = json.loads(input_str[1:], encoding="utf-8")
+                    else:
+                        input_dict = json.loads(input_str, encoding="utf-8")
+                progress_obj["value"] = 25
+                root.update()
+            except json.decoder.JSONDecodeError as error_info:
+                input_file_name = ""
+                file_name_str.set(file_name_head + "请确保文件的Json格式没有错误")
+                #tkinter.messagebox.showerror("json.decoder.JSONDecodeError", error_info)
+                count_error += 1
+                progress_obj["value"] = 0
+                root.update()
+            except UnicodeDecodeError as error_info:
+                input_file_name = ""
+                file_name_str.set(file_name_head + "请确保文件编码格式是UTF-8")
+                #tkinter.messagebox.showerror("UnicodeDecodeError", error_info)
+                count_error += 1
+                progress_obj["value"] = 0
+                root.update()
+            else:
+                dict_for_import.update(**input_dict)
+                dict_for_import.update(**dict_import_default)
+                #dict_for_import = {**dict_for_import, **input_dict}
+                #print(len(dict_for_import))
+                progress_obj["value"] = 100
+                root.update()
+        tkinter.messagebox.showinfo("依赖项已更新", "当前已载入" + str(len(dict_for_import)) + "个备用依赖项\n尝试载入" + str(len(file_name)) + "个文件\n其中共有" + str(count_error) + "个加载失败")
+    elif len(file_name) == 0:
+        if len(input_file_name) == 0:
+            file_name_str.set(file_name_head + "请选择文件！")
+        tkinter.messagebox.showwarning("警告", "请选择文件！")
+        progress_obj["value"] = 0
+        root.update()
+    else:
+        if len(input_file_name) == 0:
+            file_name_str.set(file_name_head + "请一次只选择一个文件！")
+        tkinter.messagebox.showwarning("警告", "请一次只选择一个文件！")
+        progress_obj["value"] = 0
+        root.update()
+
 def clear_conf():
     global t1
     global t2
@@ -396,6 +547,28 @@ def tabtran_switch():
     else:
         tabtran_flag = 0
         set_menu.entryconfig(3, label="排版格式优化[×]")
+
+def infoadd_switch():
+    global infoadd_flag
+    global root
+    global set_menu
+    if infoadd_flag == 0:
+        infoadd_flag = 1
+        set_menu.entryconfig(4, label="附加Info项[√]")
+    else:
+        infoadd_flag = 0
+        set_menu.entryconfig(4, label="附加Info项[×]")
+
+def import_switch():
+    global import_flag
+    global root
+    global set_menu
+    if import_flag == 0:
+        import_flag = 1
+        set_menu.entryconfig(5, label="尝试解决依赖项[√]")
+    else:
+        import_flag = 0
+        set_menu.entryconfig(5, label="尝试解决依赖项[×]")
 
 def show_info():
     tkinter.messagebox.showinfo("Json2Yaml By BenzenPenxil","Json2Yaml基于Python\n\n项目主页：\n" + project_site + "\n\n作者：仑质(BenzenPenxil)\n版本：" + j2y_version + "\n有问题请联系QQ：137334701")
@@ -575,10 +748,13 @@ if __name__ == "__main__":
     menu_bar.add_cascade(label="关于", menu=info_menu)
     file_menu.add_command(label="导入文件", command=select_file)
     file_menu.add_command(label="开始转换", command=tran_save)
+    file_menu.add_command(label="加载依赖项", command=load_import)
     set_menu.add_command(label="清空所有设置栏", command=clear_conf)
     set_menu.add_command(label="忽略不放回[×]", command=giveback_switch)
     set_menu.add_command(label="版本号优化[√]", command=versiontran_switch)
     set_menu.add_command(label="排版格式优化[√]", command=tabtran_switch)
+    set_menu.add_command(label="附加Info项[√]", command=infoadd_switch)
+    set_menu.add_command(label="尝试解决依赖项[√]", command=import_switch)
     info_menu.add_command(label="关于", command=show_info)
     info_menu.add_command(label="查看项目", command=show_project_site)
     root.config(menu=menu_bar)
@@ -595,6 +771,14 @@ if __name__ == "__main__":
         set_menu.entryconfig(3, label="排版格式优化[√]")
     else:
         set_menu.entryconfig(3, label="排版格式优化[×]")
+    if infoadd_flag != 0:
+        set_menu.entryconfig(4, label="附加Info项[√]")
+    else:
+        set_menu.entryconfig(4, label="附加Info项[×]")
+    if import_flag != 0:
+        set_menu.entryconfig(5, label="尝试解决依赖项[√]")
+    else:
+        set_menu.entryconfig(5, label="尝试解决依赖项[×]")
 
     t1.set("填入牌堆名，这同时也将是该牌堆的对应指令")
     t2.set("填入作者")
