@@ -26,7 +26,7 @@ import pyperclip
 
 from j2y_data import *
 
-j2y_version = "1.0.7.20200121.1"
+j2y_version = "1.0.8.20200122.1"
 project_site = "http://benzenpenxil.xyz/json2yaml-for-dice/"
 
 #class type_system_info:
@@ -200,6 +200,7 @@ def json2yaml_work():
     global output_file_name
     global root
     global progress_obj
+    global list_for_import_record
     progress_obj["value"] = 0
     root.update()
     output_str = "#必要信息\nname: " + deck.name
@@ -288,6 +289,7 @@ def json2yaml_work():
                     progress_obj["value"] = int(id_count_all * 75 / count_work + 15)
                     root.update()
         if import_flag != 0:
+            list_for_import_record = []
             dict_need_import_next = []
             deck.import_list = item_get_import_list(input_dict)
             deck_import_list = deck.import_list.copy()
