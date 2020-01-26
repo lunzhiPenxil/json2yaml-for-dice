@@ -7,9 +7,15 @@
 ## 获取工具
 请移步[Release页面](https://github.com/lunzhiPenxil/json2yaml-for-dice/releases)。
 
+## Wiki
+[Json2Yaml for Dice - Wiki](https://github.com/lunzhiPenxil/json2yaml-for-dice/wiki)
+
+## 项目主页
+[json2yaml-for-dice - 一个针对骰子牌堆优化的转换器](http://benzenpenxil.xyz/json2yaml-for-dice/)
+
 ## 宣传
 本人的塔系骰娘小青果酱：[仑质/青果 - 依旧存在于此](http://benzenpenxil.xyz/oliva-still-here/)
-    
+
 ## 更新日志      
 	2020/01/22：[-] 解决了第二次转换时依赖项无效的bug
 	2020/01/21：[+] 添加了从文件加载依赖项的功能（重要）
