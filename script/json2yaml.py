@@ -26,7 +26,7 @@ import pyperclip
 
 from j2y_data import *
 
-j2y_version = "1.0.8.20200122.1"
+j2y_version = "1.0.9.20200605.1"
 project_site = "http://benzenpenxil.xyz/json2yaml-for-dice/"
 
 #class type_system_info:
@@ -64,8 +64,8 @@ output_file_name = ""
 output_file_name += deck.command
 
 giveback_flag = 0
-versiontran_flag = 1
-tabtran_flag = 1
+versiontran_flag = 0
+tabtran_flag = 0
 infoadd_flag = 1
 import_flag = 1
 
@@ -754,7 +754,7 @@ if __name__ == "__main__":
     set_menu.add_command(label="清空所有设置栏", command=clear_conf)
     set_menu.add_command(label="忽略不放回[×]", command=giveback_switch)
     set_menu.add_command(label="版本号优化[√]", command=versiontran_switch)
-    set_menu.add_command(label="排版格式优化[√]", command=tabtran_switch)
+    set_menu.add_command(label="排版格式优化[×]", command=tabtran_switch)
     set_menu.add_command(label="附加Info项[√]", command=infoadd_switch)
     set_menu.add_command(label="尝试解决依赖项[√]", command=import_switch)
     info_menu.add_command(label="关于", command=show_info)
