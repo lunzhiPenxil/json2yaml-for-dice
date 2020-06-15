@@ -14,7 +14,7 @@
 [json2yaml-for-dice - 一个针对骰子牌堆优化的转换器](http://benzenpenxil.xyz/json2yaml-for-dice/)
 
 ## 宣传
-本人的塔系骰娘小青果酱：[仑质/青果 - 依旧存在于此](http://benzenpenxil.xyz/oliva-still-here/)
+本人的定制化骰娘小青果酱：[仑质/青果 - 依旧存在于此](http://benzenpenxil.xyz/oliva-still-here/)
 
 ## 更新日志      
 	2020/06/05：[+] 针对新版塔系核心将调整初始化配置，关闭了版本号和排版格式优化
